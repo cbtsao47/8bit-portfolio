@@ -3,12 +3,15 @@ import Navbar from "../components/Navbar";
 import DialogBox from "../components/DialogBox";
 import Home from "../pages/Home";
 import "./view.scss";
+import About from "../pages/About";
+import Projects from "../pages/Projects";
 const View = () => {
   return (
     <div className="view">
-      <Navbar />
       <Home />
-      <DialogBox />
+      <About />
+      <Projects />
+      <Navbar />
     </div>
   );
 };
