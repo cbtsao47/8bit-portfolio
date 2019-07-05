@@ -23,7 +23,10 @@
   justify-content: space-around;
   align-items: flex-start;
   &--primary {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
   }
 }
 

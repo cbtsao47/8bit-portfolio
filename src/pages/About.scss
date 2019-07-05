@@ -1,14 +1,18 @@
 .about-container {
   font-size: 0.8rem;
-  flex-basis: 100%;
   max-width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   line-height: 1.5;
   text-align: left;
 }
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.about {
+  height: 100%;
+  justify-content: flex-start;
 }

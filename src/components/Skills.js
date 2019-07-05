@@ -1,20 +1,25 @@
 import React from "react";
 import "./Skills.scss";
-const Skills = ({ title, text, Ben }) => {
+import Techs from "./Techs";
+const Skills = ({ title, text, Ben, techStacks }) => {
+  const { fe, be } = techStacks || {};
   return (
     <>
-      <div className="skills-container nes-container is-dark is-rounded">
+      <div className="skills-container nes-container is-dark is-rounded with-title">
+        <p className="title">Skills</p>
         <div className="skills skills-fe">
           <h2 className="skills-title">Front-End</h2>
-          <i className="nes-icon linkedin is-medium" />
-          <i className="nes-icon linkedin is-medium" />
-          <i className="nes-icon linkedin is-medium" />
+          {fe &&
+            fe.map((techStack, i) => {
+              return <Techs key={techStack.id || i} techStack={techStack} />;
+            })}
         </div>
         <div className="skills skills-be">
           <h2 className="skills-title">Back-End</h2>
-          <i className="nes-icon linkedin is-medium" />
-          <i className="nes-icon linkedin is-medium" />
-          <i className="nes-icon linkedin is-medium" />
+          {be &&
+            be.map((techStack, i) => {
+              return <Techs key={techStack.id || i} techStack={techStack} />;
+            })}
         </div>
       </div>
     </>

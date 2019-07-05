@@ -130,3 +130,18 @@ body {
 .box {
   border: 5px solid yellow;
 }
+.flex {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  i {
+    margin: 0;
+  }
+  p {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+}

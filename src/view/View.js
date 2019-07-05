@@ -7,7 +7,7 @@ import Projects from "../pages/Projects";
 import { Route, Switch } from "react-router-dom";
 const View = () => {
   return (
-    <div className="view">
+    <div className="view ">
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
