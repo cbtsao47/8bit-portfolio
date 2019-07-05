@@ -1,0 +1,33 @@
+.introduction-container {
+  display: flex;
+  //   flex-wrap: wrap;
+  text-shadow: -5px 5px #000000;
+  align-items: center;
+  justify-content: flex-start;
+}
+.self-portrait {
+  object-fit: contain;
+  margin: 0;
+  border: 2px solid #fefefe;
+  // width: 49%;
+  max-width: 248px;
+  // height: 100%;
+  box-shadow: 5px 5px 0 #ebebeb, -5px -5px 0 #ebebeb, -15px 7px 5px #000000,
+    -7px 15px 5px #000000;
+}
+.introduction-text {
+  line-height: 2;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  &--primary {
+    font-size: 2rem;
+  }
+}
+
+.introduction-paragraph {
+  line-height: 5;
+  text-shadow: -5px 5px #000000;
+}

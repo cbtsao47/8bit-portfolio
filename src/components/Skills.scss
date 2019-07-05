@@ -1,0 +1,18 @@
+.skills-container {
+  font-size: 1rem;
+}
+.skills-title {
+  margin-bottom: 1rem;
+}
+.skills {
+  max-width: 100%;
+}
+.skills {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  flex-wrap: wrap;
+  &-title {
+    width: 100%;
+  }
+}

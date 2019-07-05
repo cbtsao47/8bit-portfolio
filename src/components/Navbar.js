@@ -1,14 +1,21 @@
 import React from "react";
 import "./Navbar.scss";
 import Social from "./Social";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div className="nes-container is-dark is-rounded navbar-container">
-      <button className="nes-btn">Home</button>
-      <button className="nes-btn is-primary">About</button>
-      <button className="nes-btn">Projects</button>
+    <nav className="navbar nes-container is-dark is-rounded">
+      <NavLink to="/" className="nes-btn">
+        Home
+      </NavLink>
+      <NavLink to="/about" className="nes-btn is-primary">
+        About
+      </NavLink>
+      <NavLink to="/projects" className="nes-btn">
+        Projects
+      </NavLink>
       <Social />
-    </div>
+    </nav>
   );
 };
 

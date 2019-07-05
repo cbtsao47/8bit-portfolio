@@ -1,0 +1,8 @@
+.status {
+  display: flex;
+  align-items: center;
+  .star,
+  .heart {
+    filter: drop-shadow(-2px 2px 1px #000000);
+  }
+}
