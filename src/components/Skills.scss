@@ -1,5 +1,8 @@
 .skills-container {
-  font-size: 1rem;
+  font-size: 1.8rem;
+  .title.title-primary {
+    font-size: 1.8rem;
+  }
 }
 .skills {
   display: flex;
@@ -9,6 +12,7 @@
   flex-wrap: wrap;
   &-title {
     width: 100%;
+    font-size: 1.6rem;
   }
 }
 .nes-icon {

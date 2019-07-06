@@ -1,6 +1,11 @@
 .social {
   margin-left: auto;
-  .nes-icon {
+  // border: 1px solid yellow;
+  // width: 100%;
+  display: flex;
+  // height: auto;
+  .nes-icon.navbar-social {
     margin-top: 0;
+    margin-bottom: 0;
   }
 }

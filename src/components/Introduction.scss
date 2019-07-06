@@ -4,7 +4,11 @@
   text-shadow: -5px 5px #000000;
   align-items: center;
   justify-content: flex-start;
+  .introduction-self-portrait {
+    margin: 2rem;
+  }
 }
+
 .self-portrait {
   object-fit: contain;
   margin: 0;
@@ -16,21 +20,22 @@
     -7px 15px 5px #000000;
 }
 .introduction-text {
+  // align-self: flex-start;
   line-height: 2;
-  margin-left: 2rem;
+  margin-left: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
   &--primary {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 }
 
 .introduction-paragraph {
-  line-height: 5;
+  line-height: 2;
   text-shadow: -5px 5px #000000;
 }

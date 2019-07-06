@@ -3,10 +3,10 @@ import "./Social.scss";
 
 const Social = () => {
   return (
-    <div className="social">
-      <i className="nes-icon github is-medium" />
-      <i className="nes-icon gmail is-medium" />
-      <i className="nes-icon linkedin is-medium" />
+    <div className="social icon-list">
+      <i className="social nes-icon github is-medium navbar-social " />
+      <i className="social nes-icon gmail is-medium navbar-social " />
+      <i className="social nes-icon linkedin is-medium navbar-social " />
     </div>
   );
 };

@@ -122,10 +122,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+//  custome styles
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   font-family: "Press Start 2P";
   background: #212529;
+  // height: 100vh;
 }
 .box {
   border: 5px solid yellow;
@@ -142,6 +153,13 @@ body {
   }
   p {
     margin-top: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1.4rem;
   }
 }
+.nes-icon {
+  margin: 0;
+}
+// .nes-icon.is-medium {
+//   margin: 0;
+//   display: inline-block;
+// }

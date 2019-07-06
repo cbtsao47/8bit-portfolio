@@ -8,12 +8,12 @@ import { Route, Switch } from "react-router-dom";
 const View = () => {
   return (
     <div className="view ">
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
       </Switch>
-      <Navbar />
     </div>
   );
 };

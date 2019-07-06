@@ -6,7 +6,7 @@ const Skills = ({ title, text, Ben, techStacks }) => {
   return (
     <>
       <div className="skills-container nes-container is-dark is-rounded with-title">
-        <p className="title">Skills</p>
+        <p className="title title-primary">Skills</p>
         <div className="skills skills-fe">
           <h2 className="skills-title">Front-End</h2>
           {fe &&

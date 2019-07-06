@@ -10,7 +10,6 @@ const Introduction = ({ title, text }) => {
           <p className="introduction-text--primary">Ben Tsao</p>
         </div>
         <div className="introduction-text ">
-          {/* <p className="introduction-text--primary">{title} Tsao</p> */}
           <p className="introduction-paragraph ">{text}</p>
         </div>
       </div>
