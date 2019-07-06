@@ -1,5 +1,5 @@
 import React from "react";
-import Ben from "../assets/selfportrait.png";
+import Ben from "../../assets/selfportrait.png";
 import "./Introduction.scss";
 const Introduction = ({ title, text }) => {
   return (

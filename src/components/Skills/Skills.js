@@ -1,6 +1,6 @@
 import React from "react";
 import "./Skills.scss";
-import Techs from "./Techs";
+import Techs from "../Techs/Techs";
 const Skills = ({ techStacks }) => {
   const { fe, be } = techStacks || {};
   return (

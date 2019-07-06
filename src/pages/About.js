@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.scss";
-import Introduction from "../components/Introduction";
-import Skills from "../components/Skills";
+import Introduction from "../components/Introduction/Introduction";
+import Skills from "../components/Skills/Skills";
 import html from "../assets/html5.png";
 import css from "../assets/css.png";
 import js from "../assets/js.png";

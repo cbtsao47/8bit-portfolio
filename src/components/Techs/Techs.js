@@ -1,6 +1,6 @@
 import React from "react";
 import "./Tech.scss";
-import defaultPic from "../assets/js.png";
+import defaultPic from "../../assets/js.png";
 const Techs = ({ techStack }) => {
   const tech = Object.keys(techStack)[0];
 

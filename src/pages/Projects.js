@@ -1,20 +1,44 @@
 import React from "react";
-import Project from "../components/Project";
+import Project from "../components/Project/Project";
 import "./Projects.scss";
-const Projects = () => {
-  const project = {
-    title: "",
-    description: "",
-    techStacks: ""
-  };
+import projImg from "../assets/selfportrait.png";
+const Projects = ({ projects }) => {
   return (
     <main className="main projects nes-container is-dark is-rounded">
-      <div className="projects-container">
-        <div className="projects-image" />
-        <Project project={project} />
-      </div>
+      {projects &&
+        projects.map((project, i) => {
+          return <Project key={project.id || i} project={project} />;
+        })}
     </main>
   );
 };
 
 export default Projects;
+Projects.defaultProps = {
+  projects: [
+    {
+      title: "title",
+      description: "description",
+      techStacks: "stacks",
+      img: projImg
+    },
+    {
+      title: "title",
+      description: "description",
+      techStacks: "stacks",
+      img: projImg
+    },
+    {
+      title: "title",
+      description: "description",
+      techStacks: "stacks",
+      img: projImg
+    },
+    {
+      title: "title",
+      description: "description",
+      techStacks: "stacks",
+      img: projImg
+    }
+  ]
+};
