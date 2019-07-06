@@ -12,3 +12,10 @@ const Project = ({ project: { title, description, techStacks } }) => {
 };
 
 export default Project;
+Project.defaultProps = {
+  project: {
+    title: "title",
+    description: "description",
+    techStacks: "stacks"
+  }
+};

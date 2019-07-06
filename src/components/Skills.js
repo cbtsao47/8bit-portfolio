@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skills.scss";
 import Techs from "./Techs";
-const Skills = ({ title, text, Ben, techStacks }) => {
+const Skills = ({ techStacks }) => {
   const { fe, be } = techStacks || {};
   return (
     <>
@@ -27,3 +27,10 @@ const Skills = ({ title, text, Ben, techStacks }) => {
 };
 
 export default Skills;
+
+Skills.defaultProps = {
+  techStacks: {
+    fe: [],
+    be: []
+  }
+};

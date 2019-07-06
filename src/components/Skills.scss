@@ -1,18 +1,26 @@
 .skills-container {
   font-size: 1.8rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   .title.title-primary {
+    align-self: flex-start;
+    margin-left: 1rem;
     font-size: 1.8rem;
   }
 }
 .skills {
+  flex-grow: 1;
   display: flex;
   flex-basis: 50%;
   justify-content: center;
-  align-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   &-title {
     width: 100%;
     font-size: 1.6rem;
+    margin: 1rem;
   }
 }
 .nes-icon {
