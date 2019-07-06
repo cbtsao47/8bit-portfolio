@@ -10,9 +10,9 @@ const View = () => {
     <div className="view ">
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
+        <Route exact path="/" render={props => <Home {...props} />} />
+        <Route path="/about" render={props => <About {...props} />} />
+        <Route path="/projects" render={props => <Projects {...props} />} />
       </Switch>
     </div>
   );

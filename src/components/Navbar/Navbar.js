@@ -5,13 +5,13 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar nes-container is-dark is-rounded">
-      <NavLink to="/" className="nes-btn">
+      <NavLink exact to="/" className="nes-btn" activeClassName="is-primary">
         Home
       </NavLink>
-      <NavLink to="/about" className="nes-btn is-primary">
+      <NavLink to="/about" className="nes-btn " activeClassName="is-primary">
         About
       </NavLink>
-      <NavLink to="/projects" className="nes-btn">
+      <NavLink to="/projects" className="nes-btn" activeClassName="is-primary">
         Projects
       </NavLink>
       <Social />

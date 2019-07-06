@@ -5,12 +5,12 @@ import Skills from "../components/Skills/Skills";
 import html from "../assets/html5.png";
 import css from "../assets/css.png";
 import js from "../assets/js.png";
-import react from "../assets/iconfinder_React.js_logo_1174949.png";
-import node from "../assets/iconfinder_nodejs-512_339733 (1).png";
+import react from "../assets/react.png";
+import node from "../assets/node.png";
 import graphql from "../assets/graphql.png";
 import sql from "../assets/sql.png";
-import postgresql from "../assets/postgresql_32px_541006_easyicon.net.png";
-import redux from "../assets/Redux.png";
+import postgresql from "../assets/postgresql.png";
+import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 
 const About = ({ title, text, techStacks }) => {

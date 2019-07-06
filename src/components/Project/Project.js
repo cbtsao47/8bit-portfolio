@@ -1,12 +1,33 @@
 import React from "react";
 import "./Project.scss";
-const Project = ({ project: { title, description, techStacks } }) => {
+import img from "../../assets/selfportrait.png";
+const Project = ({
+  project: { title, description, img, projectLink, codeLink }
+}) => {
+  const handleClick = (e, link) => {
+    window.open(link);
+  };
   return (
-    <div className="project-container">
-      <div className="project-image" />
-      <h2 className="project-title">{title}</h2>
+    <div className="project-container with-title is-centered nes-container is-rounded is-dark">
+      <h2 className="project-title title">{title}</h2>
+      <img className="project-image" src={img} alt="" />
       <h2 className="project-description">{description}</h2>
-      <h2 className="project-techStacks">{techStacks}</h2>
+      <div>
+        <button
+          className="nes-btn is-primary"
+          onClick={e => handleClick(e, projectLink)}
+        >
+          Project
+        </button>
+        {codeLink ? (
+          <button
+            className="nes-btn is-primary"
+            onClick={e => handleClick(e, codeLink)}
+          >
+            Code
+          </button>
+        ) : null}
+      </div>
     </div>
   );
 };
@@ -16,6 +37,7 @@ Project.defaultProps = {
   project: {
     title: "title",
     description: "description",
-    techStacks: "stacks"
+    techStacks: "stacks",
+    img
   }
 };
