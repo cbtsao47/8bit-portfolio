@@ -12,7 +12,7 @@ const Home = ({ ...props }) => {
       <div className="title">
         <h1 className="title-text title-text--primary">Ben Tsao</h1>
         <h2 className="title-text title-text--secondary">Software Engineer</h2>
-        <h2 className="title-text title-text--tertiary nes-pointer">
+        <h2 className="title-text title-text--tertiary nes-pointer flash">
           - Click to Start -
         </h2>
       </div>
