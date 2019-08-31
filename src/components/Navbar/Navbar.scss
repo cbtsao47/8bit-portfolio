@@ -2,16 +2,17 @@
   display:flex;
   width:100%;
   // border:1px solid white;
+  align-items: center;
   @media(max-width: 742px){
     position: relative;
     justify-content: center;
-    align-items: center;
   }
 }
 .navbar {
   display: flex;
   padding: 1rem 0;
   width:100%;
+  align-items: center;
   @media (max-width:742px) {
     display:none;
   }

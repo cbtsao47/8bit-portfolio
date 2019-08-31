@@ -1,3 +1,10 @@
+.icon-list{
+  margin-left:auto;
+  display:flex;
+  @media(max-width:742px){
+    margin:0;
+  }
+}
 .social {
   display: flex;
   .nes-icon.navbar-social {
@@ -6,16 +13,11 @@
   }
 
   &-mobile{
+
     @media(max-width:742px){
+      border:1px solid red;
       display:none;
     }
   }
 
-}
-.icon-list{
-  margin-left:auto;
-  display:flex;
-  @media(max-width:742px){
-    margin:0;
-  }
 }

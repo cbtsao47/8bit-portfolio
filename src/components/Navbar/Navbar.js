@@ -15,7 +15,7 @@ const Navbar = ({screenSize}) => {
         <NavLink to="/projects" className="nes-btn" activeClassName="is-primary">
           Projects
         </NavLink>
-        <Social screenSize={screenSize}/>
+        <Social screenSize={'desktop'}/>
       </nav>
       <nav className='mobile nes-container is-dark is-rounded'>
         <NavLink exact to="/" className="nes-btn" activeClassName="is-primary">

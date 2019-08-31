@@ -5,8 +5,9 @@ const Social = ({screenSize}) => {
   const handleClick = link => {
     window.open(link);
   };
+  console.log(screenSize)
   return (
-    <div className={`icon-list social${screenSize === "mobile" ? "-mobile":null}`}>
+    <div className={`icon-list social${screenSize === "mobile" ? "-mobile":"-desktop"}`}>
       <i
         className="nes-icon github is-medium navbar-social nes-pointer"
         onClick={() => handleClick("https://github.com/cbtsao47")}
