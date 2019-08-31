@@ -1,14 +1,20 @@
 .social {
-  margin-left: auto;
-  // border: 1px solid yellow;
-  // width: 100%;
   display: flex;
-  // height: auto;
   .nes-icon.navbar-social {
     margin-top: 0;
     margin-bottom: 0;
   }
-  @media (max-width:742px) {
-    display:none;
+
+  &-mobile{
+    @media(max-width:742px){
+      display:none;
+    }
+  }
+
+}
+.icon-list{
+  margin-left:auto;
+  @media(max-width:742px){
+    margin:0;
   }
 }

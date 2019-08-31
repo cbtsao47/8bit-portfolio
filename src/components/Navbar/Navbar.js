@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.scss";
 import Social from "../Social/Social";
 import { NavLink } from "react-router-dom";
-const Navbar = () => {
+const Navbar = ({screenSize}) => {
   return (
     <div className='navbar-container'>
       <nav className="navbar nes-container is-dark is-rounded">
@@ -15,7 +15,7 @@ const Navbar = () => {
         <NavLink to="/projects" className="nes-btn" activeClassName="is-primary">
           Projects
         </NavLink>
-        <Social />
+        <Social screenSize={screenSize}/>
       </nav>
       <nav className='mobile nes-container is-dark is-rounded'>
         <NavLink exact to="/" className="nes-btn" activeClassName="is-primary">
@@ -27,7 +27,7 @@ const Navbar = () => {
           <NavLink to="/projects" className="nes-btn" activeClassName="is-primary">
             Projects
         </NavLink>
-        <Social />
+        <Social screenSize={screenSize}/>
       </nav>
     </div>
   );
