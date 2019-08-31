@@ -1,8 +1,32 @@
+.navbar-container{
+  display:flex;
+  width:100%;
+  // border:1px solid white;
+  @media(max-width: 742px){
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .navbar {
   display: flex;
   padding: 1rem 0;
+  width:100%;
+  @media (max-width:742px) {
+    display:none;
+  }
+}
+
+.mobile{
+  display:none;
+  @media (max-width:742px) {
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .nes-btn {
-  width: 152px;
+  min-width: 152px;
   font-size: 1.6rem;
 }

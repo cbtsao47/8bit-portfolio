@@ -6,6 +6,12 @@
   justify-content: flex-start;
   .introduction-self-portrait {
     margin: 2rem;
+    @media (max-width:742px) {
+      margin-bottom:0;
+    }
+  }
+  @media (max-width:742px) {
+    flex-direction: column;
   }
 }
 
@@ -32,10 +38,19 @@
     text-transform: uppercase;
     text-align: center;
     margin-top: 2rem;
+    @media (max-width:742px) {
+      margin-bottom:0;
+    }
   }
 }
 
 .introduction-paragraph {
   line-height: 2;
   text-shadow: -5px 5px #000000;
+  padding:1rem;
+  @media (max-width:742px) {
+    text-align: center;
+    font-size: 1.2rem;
+  }
 }
+
